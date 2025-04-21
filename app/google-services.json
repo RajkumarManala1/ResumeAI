@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "546002812391",
+    "project_id": "resumeai-e776c",
+    "storage_bucket": "resumeai-e776c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546002812391:android:9502b5d8daa17b51bc1142",
+        "android_client_info": {
+          "package_name": "com.example.resumeai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRzC1WYP_vtTzvlqzfPYpMomPetXErd5o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

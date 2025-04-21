@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <!-- White Background Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Back Button & Already Have an Account -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tvSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Already Have an Account?"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="46dp"
+                android:text="Sign Up"
+                android:textColor="@android:color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <!-- Orange Form Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/rounded_orange_bg"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- First Name -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/rounded_input_bg"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:textSize="16sp" />
+
+        <!-- Last Name -->
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_input_bg"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:textSize="16sp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_input_bg"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:textSize="16sp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_input_bg"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:textSize="16sp" />
+
+        <!-- Confirm Password -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_input_bg"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:textSize="16sp" />
+
+        <!-- Terms and Conditions -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <!-- Terms and Conditions - Combined TextView -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/cbTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="I have read and agree to Resume AI.\nTerms of Use, Privacy Policy and Cookie Policy "
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_black_button"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
