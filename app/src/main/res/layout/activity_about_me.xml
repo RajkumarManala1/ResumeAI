@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".AboutMeActivity">
+
+    <!-- Orange Background Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="451dp"
+        android:background="@color/light_orange"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- White Rounded Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="536dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/rounded_white_bg"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Title: About Me -->
+            <TextView
+                android:id="@+id/aboutMeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Me"
+                android:textSize="40sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/aboutMeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ResumeAI is a powerful AI-driven resume builder app. It assists users in creating professional resumes and cover letters directly from their phones."
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="40dp" />
+
+            <!-- Back Button -->
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Back"
+                android:backgroundTint="@android:color/black"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
